@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
 app = FastAPI(
-    title="Juniper Mist ",
+    title="Juniper Mist Mega Lab Deployment API",
     version="1.0.0"
 )
 
