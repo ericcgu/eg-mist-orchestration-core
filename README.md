@@ -10,13 +10,14 @@ tags:
 
 # Juniper Mist Multi Site Provisioning Service
 
-[![CI Status](https://github.com/your-repo-path/actions/workflows/ci.yml/badge.svg)](https://github.com/your-repo-path/actions)
+[![CI Status](https://github.com/ericcgu/juniper-mist-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/ericcgu/juniper-mist-ai/actions)
+
+[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/release/python-312/)
 
 ## 🌐 Live Demo
 
 The application is live and accessible at: [Juniper Mist Multi Site Provisioning Service](https://juniper-mist.up.railway.app/)
 
-[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/release/python-312/)
 
 ## 🌟 Project Overview
 
