@@ -3,7 +3,9 @@ from functools import lru_cache
 
 
 class Settings(BaseSettings):
-    test_variable: str = "default_value"
+    environment_name: str
+    mist_api_key: str
+    redis_url: str
 
     class Config:
         env_file = ".env"
