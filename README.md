@@ -17,13 +17,9 @@
 
 **`eg-mist-orchestration-core`** is a masterclass in Domain-Driven Design & Intent-Based Networking for the AI-Driven Enterprise.
 
-This project demonstrates the evolution of network infrastructure from fragile, device-by-device configuration to robust, **AI-Native Software Engineering**. It eliminates "snowflake" configurations by implementing a strictly **idempotent**, **microservices-based** architecture that orchestrates the full lifecycle—from **Day 0 Identity** to **Day 2 Assurance**.
+This project demonstrates the evolution of network infrastructure from fragile, device-by-device configuration to robust, **AI-Native Software Engineering**. It eliminates "snowflake" configurations by implementing a strictly **idempotent**, **service-based** architecture that orchestrates the full lifecycle—from **Day 0 Design, Identity & Topology** to **Day 2 Observability, Assurance & AIOps**.
 
 By treating the network as a distributed software system, this framework bridges the gap between **Network Design** (The "What") and **Software Architecture** (The "How").
-
-## Standards Alignment
-
-This architecture is designed in strict alignment with **Juniper's Device Life-Cycle Management (LCM)** standards. It utilizes official Mist primitives (**Site Variables**, **Activation Codes**, **SLEs**) ensuring forward compatibility and enterprise supportability.
 
 ---
 
@@ -31,21 +27,21 @@ This architecture is designed in strict alignment with **Juniper's Device Life-C
 
 This core orchestrator is organized into three distinct domains, mirroring the modern Infrastructure-as-Code (IaC) lifecycle.
 
-### Day 0: Genesis — Identity & Topology
+### Day 0: Design, Identity & Topology
 
 Before policies or assurance can exist, we must establish the **Identity** of the Organization and the **Topology** of the network. We use "Digital Twin" principles to build the network virtually before hardware arrives.
 
-The Genesis Layer defines six distinct, isolated domains implemented as separate service classes:
+The Genesis Layer defines six distinct, isolated domains implemented as separate service:
 
 **1. Mist Connection Service**
 - **Role:** Connectivity & Authentication
 - **Action:** API validation layer that runs a "Reachability Probe" (`GET /org/self`) to verify the API Token is valid and the cloud is accessible
 
-**2. IPAM Service**
+**2. IP Address Management (IPAM) Service**
 - **Role:** Dynamic IP Planning & Geo-Zoning
 - **Action:** Replaces manual spreadsheets with code. Acts as a dedicated Layer 3 engine that mathematically carves the `/8` Supernet into **8 Geographic Zones** (using `/11` blocks). Deterministically assigns subnets based on Region Code, eliminating human error and overlap
 
-**3. NMS Service**
+**3. Network Management System (NMS) Service**
 - **Role:** External Reference Data Aggregation
 - **Action:** Integration point for all golden network reference data stored outside of Mist. Defines the hardware hierarchy (Routers → Switches → Access Points)
 
