@@ -128,7 +128,7 @@ The deployment is not finished until the **User Experience** is validated. Day 2
 | **Pydantic** | Data validation & settings | 2.7.0 |
 | **Redis** | State management | 7.1.0 (client) / 8.0 (server) |
 | **Hypercorn** | ASGI server | 0.14.4 |
-| **mistapi** | Juniper Mist SDK | 0.55.8 |
+| **httpx** | Async HTTP client | 0.28.1 |
 | **GitHub Actions** | CI/CD pipeline | - |
 
 **Architecture:** Domain-Driven Design (DDD) Microservices
